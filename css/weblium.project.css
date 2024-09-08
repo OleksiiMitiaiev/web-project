@@ -1,88 +1,87 @@
-* {
+/* Основні стилі для всього документа */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #f0f0f0;
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+/* Стилі для секції hero */
+.hero {
+    background-color: #f4f4f4;
     padding: 20px;
     text-align: center;
 }
 
-.header {
-    background-color: #0d405f;
-    color: white;
-    padding: 50px 0;
-}
-
-.header h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.header p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.games {
-    background-color: #562356;
-    color: white;
-    padding: 50px 0;
-    text-align: center;
-}
-
-.games h2 {
+.hero__title {
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
-.games p {
+.hero__description {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin: 10px 0;
 }
 
-.game-cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.hero__image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
 }
 
-.card {
-    background-color: white;
-    color: #333;
-    border-radius: 10px;
+/* Стилі для секції mobile-games */
+.mobile-games {
     padding: 20px;
-    width: 250px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mobile-games__title {
+    font-size: 2em;
+    margin-bottom: 10px;
     text-align: center;
 }
 
-.card img {
-    max-width: 100px;
-    margin-bottom: 15px;
+.mobile-games__description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.card h3 {
-    font-size: 1.5em;
+.mobile-games__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mobile-games__item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.mobile-games__item img {
+    max-width: 100%;
+    height: auto;
     margin-bottom: 10px;
 }
 
-.card p {
+.game__title {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.game__description {
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .game__price {
     font-size: 1.2em;
+    color: #e74c3c;
     font-weight: bold;
-    color: #e67e22;
 }
